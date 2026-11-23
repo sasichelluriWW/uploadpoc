@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urgent Reminder - One Week Remaining</title>
 
     <style>
@@ -13,50 +13,50 @@
         font-family: Helvetica, sans-serif;
         color: #3a474e;
       }
-
+ 
       table {
         border-collapse: collapse;
       }
-
+ 
       .container {
-        width: 900px;
+        width: auto;
         margin: 30px auto;
         background: #ffffff;
         border: 1px solid #dcdcdc;
       }
-
+ 
       .header {
         background: #3a474e;
         color: #ffffff;
         padding: 22px 30px;
       }
-
+ 
       .header h1 {
         margin: 0;
-        font-family: "Fresh Sans", serif;
+        font-family:Fresh Sans, serif;
         font-size: 26px;
         font-weight: 500;
         letter-spacing: 0.5px;
       }
-
+ 
       .content {
         padding: 30px;
         font-size: 15px;
         line-height: 24px;
         color: #3a474e;
       }
-
+ 
       .warning-box {
         background: #f7f7f8;
         border-left: 5px solid #a5c84d;
         padding: 18px;
         margin: 25px 0;
       }
-
+ 
       .warning-box strong {
         color: #3a474e;
       }
-
+ 
       .section-title {
         font-size: 18px;
         color: #3a474e;
@@ -64,12 +64,12 @@
         margin-top: 30px;
         margin-bottom: 15px;
       }
-
+ 
       .booking-table {
         width: 100%;
         border: 1px solid #ebeced;
       }
-
+ 
       .booking-table th {
         background: #3a474e;
         color: #ffffff;
@@ -77,34 +77,36 @@
         text-align: left;
         font-size: 14px;
         font-weight: 500;
+        text-align: center;
       }
-
+ 
       .booking-table td {
         padding: 12px;
         border: 1px solid #ebeced;
         vertical-align: middle;
         color: #3a474e;
+        text-align: center;
       }
-
+ 
       .booking-table tr:nth-child(even) {
         background: #f7f7f8;
       }
-
+ 
       .status-pending {
         color: #9e1c18;
         font-weight: bold;
       }
-
+ 
       .status-completed {
         color: #095927;
         font-weight: bold;
       }
-
+ 
       .status-na {
         color: #616c71;
         font-style: italic;
       }
-
+ 
       .button {
         background: #a5c84d;
         color: #000000 !important;
@@ -115,18 +117,18 @@
         font-size: 13px;
         font-weight: 700;
       }
-
+ 
       .info-box {
         background: #f7f7f8;
         border-left: 5px solid #a5c84d;
         padding: 18px;
         margin-top: 30px;
       }
-
+ 
       .info-box strong {
         color: #3a474e;
       }
-
+ 
       .footer {
         background: #3a474e;
         padding: 25px 30px;
@@ -134,59 +136,48 @@
         color: #ebeced;
         border-top: 3px solid #a5c84d;
       }
-
+ 
       .footer strong {
         color: #ffffff;
       }
-
+ 
       .footer a {
         color: #a5c84d;
       }
-
+ 
       .accent-bar {
         background: linear-gradient(to right, #5dc49b, #a5c84d);
         height: 4px;
       }
-
+ 
       @media only screen and (max-width: 920px) {
         .container {
           width: 100% !important;
         }
-
+ 
         .content,
         .header,
         .footer {
           padding: 20px !important;
         }
-
+ 
         .booking-table {
           font-size: 13px;
         }
-
+ 
         .button {
           display: block;
           text-align: center;
         }
       }
-    </style>
+</style>
   </head>
 
   <body>
-    <table
-      width="100%"
-      cellpadding="0"
-      cellspacing="0"
-      bgcolor="#EBECED"
-      role="presentation"
-    >
+    <table width="100%" cellpadding="0" cellspacing="0" bgcolor="#EBECED" role="presentation">
       <tr>
         <td align="center">
-          <table
-            class="container"
-            cellpadding="0"
-            cellspacing="0"
-            role="presentation"
-          >
+          <table class="container" cellpadding="0" cellspacing="0" role="presentation">
             <!-- ACCENT BAR -->
 
             <tr>
@@ -198,13 +189,8 @@
             <tr>
               <td class="header">
                 <h1>
-                  <img
-                    src="https://www.cartology.com.au/content/dam/cartology/header-footer/cq5dam.thumbnail.319.319.png"
-                    alt="Cartology"
-                    height="26"
-                    style="vertical-align: middle; margin-right: 8px"
-                  />
-                  &mdash; Upcoming Deadline {{WoWCode}} - 1 Week Reminder
+                  <img src="https://www.cartology.com.au/content/dam/cartology/header-footer/cq5dam.thumbnail.319.319.png" alt="Cartology" height="26" style="vertical-align: middle; margin-right: 8px">
+                  Upcoming Deadline {{WoWCode}} - 1 Week Reminder
                 </h1>
               </td>
             </tr>
@@ -214,100 +200,54 @@
             <tr>
               <td class="content">
                 <p>
-                Dear {{Client Name}},<br />
-                  {{Ops Exec}} is sending you a friendly reminder that you have
-                  upcoming deadlines within the next 7 days.
-                </p>
+                  Dear {{ClientName}},<br></p>
+                  
+                            <p>
+                                <strong>Campaign Name:</strong> {{CampaignName}}<br>
+                                <strong>Campaign ID:</strong> {{WoWCode}}<br>
+                                <strong>Campaign Start Date:</strong> {{HeaderStartDate}}
+                            </p>
+
 
             
 
                 <p>
-                  The below campaign line items require artwork uploads and/or
-                  Briefing forms to be completed.
+                 The below campaign line items still require artwork uploads and/or Briefing forms to be completed.
                 </p>
 
                 <!-- OUTSTANDING CAMPAIGN ITEMS -->
 
-                <div class="section-title">
-                  {{WoWCode}} - {{Campaign Name}} - Deadlines
-                </div>
-                <p>Info Needed in Table</p>
+                
 
                 <table class="booking-table">
-                  <tr>
-                    <th scope="col" width="8%">WOW ID</th>
-                    <th scope="col" width="15%">Campaign Line Item</th>
-                    <th scope="col" width="8%">Channel</th>
-                    <th scope="col" width="8%">Package</th>
-                    <th scope="col" width="15%">Media Format</th>
-                    <th scope="col" width="14%">
+                 <tr>
+<th scope="col" >WOW ID</th>
+<th scope="col" >Campaign Line Item</th>
+<th scope="col" >Channel</th>
+<th scope="col" >Package</th>
+<th scope="col" >Media Format</th>
+<th scope="col" >
                       Campaign Line Item Start Date
-                    </th>
-                    <th scope="col" width="10%">Campaign Type</th>
-                    <th scope="col" width="6%">Shared</th>
-                    <th scope="col" width="24%">Action</th>
-                  </tr>
+</th>
+<th scope="col" >Campaign Type</th>
+<th scope="col" >Shared</th>
+<th scope="col" >Action</th>
+</tr>
 
                   <!-- Example Rows (remove in production) -->
                   <tr>
-                    <td>100245</td>
-                    <td>CLI-987654</td>
-                    <td>In-Store Digital</td>
-                    <td>Chilled Bus Stop Decal Package</td>
-                    <td>Screen Banner</td>
-                    <td>15 Aug 2026</td>
-                    <td>Special</td>
-                    <td>No</td>
-                    <td>
-                      <a class="button" href="#" style="margin-bottom: 5px"
-                        >Upload Artwork<br /><span
-                          style="font-size: 11px; font-weight: normal"
-                          >(Due Date - 15 Aug 2026)</span
-                        ></a
-                      >
-                      <a class="button" href="#"
-                        >Complete Brief<br /><span
-                          style="font-size: 11px; font-weight: normal"
-                          >(Due Date - 15 Aug 2026)</span
-                        ></a
-                      >
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>100245</td>
-                    <td>CLI-987700</td>
-                    <td>Online</td>
-                    <td>Bus Stop Decal Package</td>
-                    <td>Homepage Banner</td>
-                    <td>15 Aug 2026</td>
-                    <td>New</td>
-                    <td>Yes</td>
-                    <td>
-                      <a class="button" href="#" style="margin-bottom: 5px"
-                        >Upload Artwork<br /><span
-                          style="font-size: 11px; font-weight: normal"
-                          >(Due Date - 15 Aug 2026)</span
-                        ></a
-                      >
-                      <a class="button" href="#"
-                        >Complete Brief<br /><span
-                          style="font-size: 11px; font-weight: normal"
-                          >(Due Date - 15 Aug 2026)</span
-                        ></a
-                      >
-                    </td>
+                                     {{{BookingRows}}}
+
                   </tr>
                 </table>
 
                 <div class="warning-box">
                   <strong>Important</strong>
-                  <ul
-                    style="
+                  <ul style="
                       margin-top: 10px;
                       margin-bottom: 0;
                       padding-left: 20px;
-                    "
-                  >
+                    ">
                     <li>
                       Please complete all required uploads and briefing forms by
                       due date.
@@ -319,17 +259,15 @@
                 <p>
                   If you have any questions, please contact your Cartology
                   representative at
-                  <a href="mailto:{{CartologyRepEmail}}" style="color: #095927"
-                    >{{Ops Exec Email}}</a
-                  >.
+                  <a href="mailto:{{CartologyRepEmail}}" style="color: #095927">{{OpsExecEmail}}</a>.
                 </p>
 
                 <p>
                   Kind Regards,
 
-                  <br /><br />
+                  <br><br>
 
-                  <strong>Cartology Operations</strong>
+                  Cartology Operations
                 </p>
               </td>
             </tr>
@@ -338,19 +276,14 @@
 
             <tr>
               <td class="footer">
-                <img
-                  src="https://www.cartology.com.au/content/dam/cartology/header-footer/cq5dam.thumbnail.319.319.png"
-                  alt="Cartology"
-                  height="26"
-                  style="vertical-align: middle"
-                />
+                <img src="https://www.cartology.com.au/content/dam/cartology/header-footer/cq5dam.thumbnail.319.319.png" alt="Cartology" height="26" style="vertical-align: middle">
 
-                <br /><br />
+                <br><br>
 
                 This is an automated reminder generated by the Cartology Artwork
                 Management System. Please do not reply to this email.
 
-                <br /><br />
+                <br><br>
 
                 &copy; {{CurrentYear}} Cartology. All rights reserved.
               </td>

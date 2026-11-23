@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cartology Asset Sharing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartology Revised Asset Sharing</title>
 
     <style>
         body {
@@ -229,9 +229,8 @@
 
                     <tr>
                         <td class="header">
-                            <h1><img src="https://www.cartology.com.au/content/dam/cartology/header-footer/cq5dam.thumbnail.319.319.png"
-                                    alt="Cartology" height="26" style="vertical-align: middle; margin-right: 8px;" />
-                                &mdash; Artwork Sharing</h1>
+                            <h1><img src="https://www.cartology.com.au/content/dam/cartology/header-footer/cq5dam.thumbnail.319.319.png" alt="Cartology" height="26" style="vertical-align: middle; margin-right: 8px;">
+                                Revised Asset Sharing</h1>
                         </td>
                     </tr>
 
@@ -239,35 +238,39 @@
 
                     <tr>
                         <td class="content">
-                            <p>{{ProjectOwner}} shared assets with you.</p>
+                        <p>
+                Dear {{ClientName}},<br>
+                </p>
+                            <p>{{ProjectOwner}} shared revised assets with you.</p>
 
                             <p>
-                                <strong>Campaign Name:</strong> {{ProjectName}}<br />
-                                <strong>Campaign ID:</strong> {{WoWCode}}<br />
+                                <strong>Campaign Name:</strong> {{CampaignName}}<br>
+                                <strong>Campaign ID:</strong> {{WoWCode}}<br>
                                 <strong>Campaign Start Date:</strong> {{HeaderStartDate}}
                             </p>
 
                             <p>
-                                Please find link below for assets that have been shared for your upcoming campaign
-                                booked with Cartology.<br />
+                                Please find link below for revised assets that have been shared for your upcoming
+                                campaign
+                                booked with Cartology.<br>
                             </p>
 
                             <p>
-                               Please click on the link to access the Cartology Asset Manager to view and download all assets relating to (Campaign Name).
+                               Please click on the link to access the Cartology Asset Manager to view and download all revised assets relating to  {{CampaignName}}.
                             </p>
 
-                            <!-- Campaign Assets -->
+                            <!-- CAMPAIGN RESOURCES -->
                             <div class="section-title">Campaign Assets</div>
 
-                            <div class="resource-label">Specifications &amp; Guidelines</div>
+                            <div class="resource-label">Specifications & Guidelines</div>
 
                             <table class="resource-table">
                                 <tr>
                                     <th scope="col" width="60%">Item</th>
-                                    <th scope="col" width="40%">Read</th>
+                                    <th scope="col" width="40%">Action</th>
                                 </tr>
                                 <tr>
-                                    <td>Specifications &amp; Guidelines</td>
+                                    <td>Specifications & Guidelines</td>
                                     <td>
                                         <a class="button" href="{{DownloadLink}}"> View Assets </a>
                                     </td>
@@ -279,14 +282,13 @@
                             </p>
 
                             <p>
-                                If you have any questions, please contact your Cartology Operations Executive at <a
-                                    href="mailto:{{OpsExecEmail}}" style="color: #095927;">{{OpsExecEmail}}</a>.
+                                If you have any questions, please contact your Cartology Operations Executive at <a href="mailto:{{OpsExecEmail}}" style="color: #095927;">{{OpsExecEmail}}</a>.
                             </p>
 
                             <p>
                                 Kind Regards,
-                                <br /><br />
-                                <strong>Cartology Operations</strong>
+                                <br><br>
+                Cartology Operations
                             </p>
                         </td>
                     </tr>
@@ -295,15 +297,14 @@
 
                     <tr>
                         <td class="footer">
-                            <img src="https://www.cartology.com.au/content/dam/cartology/header-footer/cq5dam.thumbnail.319.319.png"
-                                alt="Cartology" height="26" style="vertical-align: middle;" />
+                            <img src="https://www.cartology.com.au/content/dam/cartology/header-footer/cq5dam.thumbnail.319.319.png" alt="Cartology" height="26" style="vertical-align: middle;">
 
-                            <br /><br />
+                            <br><br>
 
                             This is an automated email generated by the Cartology Artwork Management System. Please
                             do not reply to this email.
 
-                            <br /><br />
+                            <br><br>
 
                             &copy; {{CurrentYear}} Cartology. All rights reserved.
                         </td>
